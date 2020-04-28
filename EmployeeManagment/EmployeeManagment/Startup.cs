@@ -38,7 +38,8 @@ namespace EmployeeManagment
             }
 
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            //app.UseMvcWithDefaultRoute(); 
+            app.UseMvc();
 
             app.Run(async (context) =>
             {
