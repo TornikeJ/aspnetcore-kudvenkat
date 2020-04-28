@@ -1,8 +1,33 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h1>Details.cshtml from Views/Home folder</h1>
-</body>
-</html>
+﻿@model HomeDetailsViewModel
+
+
+@{
+    ViewBag.Title= "Employee detail";
+}
+
+
+<h3>@ViewData["PageTitle"]</h3>
+
+<div>
+    Name: @ViewBag.employee.Name;
+</div>
+<div>
+    Email: @ViewBag.employee.Email;
+</div>
+<div>
+    Department: @ViewBag.employee.Department;
+</div>
+<br />
+<div>
+    Name: @Model.Employee.Name;
+</div>
+<div>
+    Email: @Model.Employee.Email;
+</div>
+<div>
+    Department: @Model.Employee.Department;
+</div>
+
+@section  Scripts{ 
+    <script src="~/js/CustomScript.js"></script>
+}
