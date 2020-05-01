@@ -1,3 +1,9 @@
 ﻿.btn {
     width:75px;
 }
+
+.imageThumbnail{
+    object-fit:contain;
+    height:200px;
+    width:auto;
+}
